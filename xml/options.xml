@@ -8,7 +8,7 @@
 
 	<!-- color palette -->
 	<subset name="color" displayName="Color Scheme">
-		<include name="dark" displayName="Dark">./colors/dark.xml</include>
+		<include name="dark" displayName="Default">./colors/dark.xml</include>
 		<include name="everforest" displayName="Everforest">./colors/everforest.xml</include>
 		<include name="everforest_light" displayName="Everforest Light">./colors/everforest_light.xml</include>
 		<include name="dracula" displayName="Dracula">./colors/dracula.xml</include>
