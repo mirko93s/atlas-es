@@ -1,0 +1,77 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="screen">
+		<!-- Start: Resets -->
+		<controllerActivity name="controllerActivity">
+			<visible>false</visible>
+		</controllerActivity>
+		<batteryIndicator name="batteryIndicator">
+			<visible>false</visible>
+		</batteryIndicator>
+		<text name="clock">
+			<visible>false</visible>
+		</text>
+		<!-- End: Resets -->
+		<!-- System Indicators -->
+		<stackpanel name="batteryIndicatorExtra" extra="true">
+			<orientation>horizontal</orientation>
+			<separator>2</separator>
+			<size ifSubset="font-size:small">0.2 0.027</size>
+			<size ifSubset="font-size:default">0.2 0.030</size>
+			<size ifSubset="font-size:large">0.2 0.033</size>
+			<pos>0.79 0.9629166666666667</pos>
+			<reverse>true</reverse>
+			<zIndex>9</zIndex>
+
+			<clock name="system-clock">
+				<orientation>horizontal</orientation>
+				<color>${color.foreground}</color>
+				<glowColor>000000</glowColor>
+				<glowSize>1</glowSize>
+				<fontPath>${fontBold}</fontPath>
+				<fontSize ifSubset="font-size:small">${fontSize11}</fontSize>
+				<fontSize ifSubset="font-size:default">${fontSize12}</fontSize>
+				<fontSize ifSubset="font-size:large">${fontSize13}</fontSize>
+			</clock>
+			<networkIcon name="system-network-icon">
+				<maxSize>1 1</maxSize>
+				<color>${color.foreground}</color>
+				<networkIcon>./assets/icons/network/wifi_on.svg</networkIcon>
+				<planemodeIcon>./assets/icons/network/plane_mode.svg</planemodeIcon>
+			</networkIcon>
+			<batteryText name="system-battery-text">
+				<color>${color.foreground}</color>
+				<glowColor>000000</glowColor>
+				<glowSize>1</glowSize>
+				<fontPath>${fontBold}</fontPath>
+				<fontSize ifSubset="font-size:small">${fontSize11}</fontSize>
+				<fontSize ifSubset="font-size:default">${fontSize12}</fontSize>
+				<fontSize ifSubset="font-size:large">${fontSize13}</fontSize>
+			</batteryText>
+			<!-- <text name="fake-battery-text" extra="true">
+				<text>100%</text>
+				<color>${color.foreground}</color>
+				<glowColor>000000</glowColor>
+				<glowSize>1</glowSize>
+				<fontPath>${fontBold}</fontPath>
+				<fontSize ifSubset="font-size:small">${fontSize11}</fontSize>
+				<fontSize ifSubset="font-size:default">${fontSize12}</fontSize>
+				<fontSize ifSubset="font-size:large">${fontSize13}</fontSize>
+			</text> -->
+			<batteryIcon name="system-battery-icon">
+				<maxSize>1 1</maxSize>
+				<color>${color.foreground}</color>
+				<empty>./assets/icons/battery/no_icon.png</empty>
+				<at25>./assets/icons/battery/no_icon.png</at25>
+				<at50>./assets/icons/battery/no_icon.png</at50>
+				<at75>./assets/icons/battery/no_icon.png</at75>
+				<full>./assets/icons/battery/no_icon.png</full>
+				<incharge>./assets/icons/battery/charge.png</incharge>
+				<!-- only show charging logo, hide other ones -->
+			</batteryIcon>
+	  
+		</stackpanel>
+		
+	</view>
+</theme>

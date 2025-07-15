@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="screen">
+		<!-- 
+			Perfect CRT overlay from u/1playerinsertcoin
+			https://www.reddit.com/r/MiyooMini/comments/15gq899/i_made_a_crt_overlay/
+		-->
+		<image name="perfect_crt" extra="true" if="${screen.width} == 640 &amp;&amp; ${screen.height} == 480">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./assets/shaders/Perfect_CRT.png</path>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+		<!-- 
+			adaptation of the above overlay, tiled crt image and tv border overlay added on top
+		-->
+		<image name="crt" extra="true" if="${screen.width} != 640 &amp;&amp; ${screen.height} != 480">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./assets/shaders/crt.png</path>
+			<linearSmooth>true</linearSmooth>
+			<tile>true</tile>
+		</image>
+		<!-- tv border hidden on small screens so it doesn't cover stuff -->
+		<ninepatch name="crt_border" extra="true" tinyScreen="false" if="${screen.width} != 640 &amp;&amp; ${screen.height} != 480">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./assets/shaders/crt_border.png</path>
+			<linearSmooth>true</linearSmooth>
+		</ninepatch>
+		<ninepatch name="tv" extra="true" if="${screen.width} != 640 &amp;&amp; ${screen.height} != 480">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./assets/shaders/tv.png</path>
+			<linearSmooth>true</linearSmooth>
+			<color>000000</color>
+		</ninepatch>
+	</view>
+</theme>

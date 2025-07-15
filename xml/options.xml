@@ -1,0 +1,158 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<!-- Version -->
+	<subset name="version" displayName="Atlas by mirko93s">
+		<include name="version" displayName="v 1.0.0" />
+	</subset>
+
+	<!-- color palette -->
+	<subset name="color" displayName="Color Scheme">
+		<include name="dark" displayName="Dark">./colors/dark.xml</include>
+		<include name="everforest" displayName="Everforest">./colors/everforest.xml</include>
+		<include name="everforest_light" displayName="Everforest Light">./colors/everforest_light.xml</include>
+		<include name="dracula" displayName="Dracula">./colors/dracula.xml</include>
+		<include name="nord" displayName="Nord">./colors/nord.xml</include>
+		<include name="monokai_pro" displayName="Monokai Pro">./colors/monokai_pro.xml</include>
+		<include name="monokai_pro_light" displayName="Monokai Pro Light">./colors/monokai_pro_light.xml</include>
+		<include name="catppuccin_mocha" displayName="Catppuccin Mocha">./colors/catppuccin_mocha.xml</include>
+		<include name="catppuccin_latte" displayName="Catppuccin Latte">./colors/catppuccin_latte.xml</include>
+	</subset>
+
+	<!-- animation -->
+	<subset name="animation" displayName="Animations">
+		<include name="on" displayName="On" />
+		<include name="off" displayName="Off" />
+	</subset>
+	
+	<!-- description scroll speed -->
+	<subset name="scrollSpeed" displayName="Description Scroll Speed">
+		<include name="default" displayName="Default" />
+		<include name="fast" displayName="Fast" />
+		<include name="faster" displayName="Faster" />
+		<include name="fastest" displayName="Fastest" />
+		<include name="slowest" displayName="Slowest" />
+		<include name="slower" displayName="Slower" />
+		<include name="slow" displayName="Slow" />
+	</subset>
+
+	<!-- video -->
+	<subset name="video" displayName="Video Background">
+		<include name="on" displayName="On" />
+		<include name="off" displayName="Off (Save Battery)" />
+	</subset>
+
+	<!-- video delay-->
+	<subset name="videoDelay" displayName="Video Delay">
+		<include name="5" displayName="5 s" />
+		<include name="10" displayName="10 s" />
+		<include name="30" displayName="30 s" />
+		<include name="0" displayName="Instant" />
+	</subset>
+
+	<!-- video opacity-->
+	<subset name="videoOpacity" displayName="Video Opacity">
+		<include name="60" displayName="60 %" /> <!-- 999999FF -->
+		<include name="65" displayName="65 %" /> <!-- A6A6A6FF -->
+		<include name="70" displayName="70 %" /> <!-- B2B2B2FF -->
+		<include name="75" displayName="75 %" /> <!-- BFBFBFFF -->
+		<include name="80" displayName="80 %" /> <!-- CCCCCCFF -->
+		<include name="85" displayName="85 %" /> <!-- D9D9D9FF -->
+		<include name="90" displayName="90 %" /> <!-- E6E6E6FF -->
+		<include name="95" displayName="95 %" /> <!-- F2F2F2FF -->
+		<include name="100" displayName="100 %" /> <!-- FFFFFFFF -->
+		<include name="0" displayName="0 %" /> <!-- 000000FF -->
+		<include name="5" displayName="5 %" /> <!-- 0D0D0DFF -->
+		<include name="10" displayName="10 %" /> <!-- 1A1A1AFF -->
+		<include name="15" displayName="15 %" /> <!-- 262626FF -->
+		<include name="20" displayName="20 %" /> <!-- 333333FF -->
+		<include name="25" displayName="25 %" /> <!-- 404040FF -->
+		<include name="30" displayName="30 %" /> <!-- 4D4D4DFF -->
+		<include name="35" displayName="35 %" /> <!-- 595959FF -->
+		<include name="40" displayName="40 %" /> <!-- 666666FF -->
+		<include name="45" displayName="45 %" /> <!-- 737373FF -->
+		<include name="50" displayName="50 %" /> <!-- 808080FF -->
+		<include name="55" displayName="55 %" /> <!-- 8C8C8CFF -->
+	</subset>
+
+	<!-- screenshot opacity-->
+	<subset name="screenshotOpacity" displayName="Screenshot Opacity">
+		<include name="25" displayName="25 %" /> <!-- FFFFFF40 -->
+		<include name="30" displayName="30 %" /> <!-- FFFFFF4D -->
+		<include name="35" displayName="35 %" /> <!-- FFFFFF59 -->
+		<include name="40" displayName="40 %" /> <!-- FFFFFF66 -->
+		<include name="45" displayName="45 %" /> <!-- FFFFFF73 -->
+		<include name="50" displayName="50 %" /> <!-- FFFFFF80 -->
+		<include name="55" displayName="55 %" /> <!-- FFFFFF8C -->
+		<include name="60" displayName="60 %" /> <!-- FFFFFF99 -->
+		<include name="65" displayName="65 %" /> <!-- FFFFFFA6 -->
+		<include name="70" displayName="70 %" /> <!-- FFFFFFB2 -->
+		<include name="75" displayName="75 %" /> <!-- FFFFFFBF -->
+		<include name="80" displayName="80 %" /> <!-- FFFFFFCC -->
+		<include name="85" displayName="85 %" /> <!-- FFFFFFD9 -->
+		<include name="90" displayName="90 %" /> <!-- FFFFFFE6 -->
+		<include name="95" displayName="95 %" /> <!-- FFFFFFF2 -->
+		<include name="100" displayName="100 %" /> <!-- FFFFFFFF -->
+		<include name="0" displayName="0 %" /> <!-- FFFFFF00 -->
+		<include name="5" displayName="5 %" /> <!-- FFFFFF0D -->
+		<include name="10" displayName="10 %" /> <!-- FFFFFF1A -->
+		<include name="15" displayName="15 %" /> <!-- FFFFFF26 -->
+		<include name="20" displayName="20 %" /> <!-- FFFFFF33 -->
+	</subset>
+	
+	<!-- Filters -->
+	<subset name="crt" displayName="CRT Filter">
+		<include name="off" displayName="Off"/>
+		<include name="on" displayName="On">${themePath}/xml/shaders/crt.xml</include>
+	</subset>
+
+	<!-- font -->
+	<subset name="font" displayName="Font">
+		<include name="ubuntu" displayName="Ubuntu" />
+		<include name="tektur" displayName="Tektur" />
+		<include name="saira" displayName="Saira" />
+	</subset>
+
+	<!-- font size -->
+	<subset name="font-size" displayName="Font Size">
+		<include name="large" displayName="Large" />
+		<include name="small" displayName="Small" />
+		<include name="default" displayName="Medium" />
+	</subset>
+
+	<!-- condensed font in games list -->
+	<subset name="fontCondensed" displayName="Font Condensed in Games List">
+		<include name="on" displayName="On" />
+		<include name="off" displayName="Off" />
+	</subset>
+
+	<!-- uppercase games -->
+	<subset name="uppercaseGames" displayName="Uppercase Games">
+		<include name="on" displayName="On" />
+		<include name="off" displayName="Off" />
+	</subset>
+
+	<!-- uppercase games -->
+	<subset name="helpIcons" displayName="Help Icons">
+		<include name="xboxone" displayName="Xbox One" />
+		<include name="amazonluna" displayName="Amazon Luna" />
+		<include name="googlestadia" displayName="Google Stadia" />
+		<include name="keyboard" displayName="Keyboard" />
+		<include name="switch" displayName="Nintendo Switch" />
+		<include name="wiiu" displayName="Nintendo Wii U" />
+		<include name="ps3" displayName="PlayStation 3" />
+		<include name="ps4" displayName="Playstation 4" />
+		<include name="ps5" displayName="Playstation 5" />
+		<include name="psvita" displayName="Playstation Vita" />
+		<include name="steam" displayName="Steam" />
+		<include name="steamdeck" displayName="Steam Deck" />
+		<include name="xbox360" displayName="Xbox 360" />
+		<include name="xboxseriesx" displayName="Xbox Series X" />
+	</subset>
+
+	<!-- system count -->
+	<subset name="system-count" displayName="System Count">
+		<include name="on" displayName="On" />
+		<include name="off" displayName="Off" />
+	</subset>
+</theme>

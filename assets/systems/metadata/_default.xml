@@ -1,0 +1,9 @@
+<theme>
+	<variables>
+		<systemName>${system.fullName}</systemName>
+		<systemManufacturer>&#032;</systemManufacturer>
+		<systemReleaseYear>&#032;</systemReleaseYear>
+		<systemReleaseDate>&#032;</systemReleaseDate>
+		<systemDescription>View and play the ${system.fullName}</systemDescription>
+	</variables>
+</theme>

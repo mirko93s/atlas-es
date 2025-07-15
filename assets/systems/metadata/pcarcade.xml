@@ -1,0 +1,9 @@
+<theme>
+	<variables>
+		<systemName>PC Arcade Games</systemName>
+		<systemManufacturer>Various</systemManufacturer>
+		<systemReleaseYear>Various</systemReleaseYear>
+		<systemReleaseDate>Various</systemReleaseDate>
+		<systemDescription>In the beginning of the 2000s arcade system manufacturers started to move away from custom board designs, and as part of this change many instead adapted the standard PC architecture. There were numerous such designs running Linux or Windows, for instance Sega Lindbergh, Namco System N2 and Taito Type X.</systemDescription>
+	</variables>
+</theme>

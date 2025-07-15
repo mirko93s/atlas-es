@@ -1,0 +1,10 @@
+<theme>
+	<variables>
+		<systemName>Xbox One</systemName>
+		<systemManufacturer>Microsoft</systemManufacturer>
+		<systemReleaseYear>2013</systemReleaseYear>
+		<systemReleaseDate>2013-11-22</systemReleaseDate>
+		<systemDescription>The Xbox One is an eighth-generation home video game console developed by Microsoft. It was released in 2013 as the successor to the Xbox 360, and while initial marketing was focused on its multimedia features rather than its gaming capabilities, this changed throughout the lifetime of the console.
+        It's notable that there are few exclusives on this console as Microsoft had started to focus increasingly on providing most games also on their Windows operating system.</systemDescription>
+	</variables>
+</theme>

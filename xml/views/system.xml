@@ -1,0 +1,213 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+		<!-- Start: Resets -->
+		<text name="systemInfo">
+			<visible>false</visible>
+		</text>
+		<!-- End: Resets -->
+		<image name="system-background-color" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<minSize>1 1</minSize>
+			<path>${spacerImage}</path>
+			<color>${color.background}</color>
+			<opacity>1</opacity>
+			<zIndex>0</zIndex>
+		</image>
+		<text name="system-manufacturer,system-fullname,system-year">
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+		</text>
+		<text name="system-manufacturer" extra="true">
+			<text>${systemManufacturer}</text>
+			<pos>-0.98 0.01</pos>
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>${fontSize28}</fontSize>
+			<color>${color.comment}</color>
+			<storyboard ifSubset="animation:on">
+				<animation property="offsetX" to="1" begin="2000" duration="1000" mode="EaseOut"/>
+				<animation property="offsetX" to="0" begin="10500" duration="1000" mode="EaseIn"/>
+			</storyboard>
+			<storyboard ifSubset="animation:off">
+				<animation property="offsetX" to="1" begin="2000" duration="0" mode="EaseOut"/>
+				<animation property="offsetX" to="0" begin="10000" duration="0" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="system-fullname" extra="true">
+			<text>${systemName}</text>
+			<pos>-0.98 0.09</pos>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>${fontSize20}</fontSize>
+			<color>${color.comment}</color>
+			<storyboard ifSubset="animation:on">
+				<animation property="offsetX" to="1" begin="2250" duration="1000" mode="EaseOut"/>
+				<animation property="offsetX" to="0" begin="10250" duration="1000" mode="EaseIn"/>
+			</storyboard>
+			<storyboard ifSubset="animation:off">
+				<animation property="offsetX" to="1" begin="2250" duration="0" mode="EaseOut"/>
+				<animation property="offsetX" to="0" begin="10000" duration="0" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="system-year" extra="true">
+			<text>${systemReleaseYear}</text>
+			<pos>-0.98 0.15</pos>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>${fontSize16}</fontSize>
+			<color>${color.comment}</color>
+			<storyboard ifSubset="animation:on">
+				<animation property="offsetX" to="1" begin="2500" duration="1000" mode="EaseOut"/>
+				<animation property="offsetX" to="0" begin="10000" duration="1000" mode="EaseIn"/>
+			</storyboard>
+			<storyboard ifSubset="animation:off">
+				<animation property="offsetX" to="1" begin="2500" duration="0" mode="EaseOut"/>
+				<animation property="offsetX" to="0" begin="10000" duration="0" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="system-description" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.65</pos><!-- 680 450 -->
+			<size>0.8 0.55</size><!-- 160 20 -->
+			<text>${systemDescription}</text>
+			<fontPath>${fontCondensed}</fontPath>
+			<fontSize>${fontSize24}</fontSize>
+			<color>${color.foreground}</color>
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+			<!-- <multiLine>true</multiLine> -->
+			<verticalAlignment>top</verticalAlignment>
+			<alignment>center</alignment>
+			<!-- <singleLineScroll>false</singleLineScroll> -->
+			<autoScroll>vertical</autoScroll>
+			<autoScrollDelay>12500</autoScrollDelay>
+			<autoScrollSpeed>${scrollSpeed}</autoScrollSpeed>
+			<!-- <padding>0.01 0 0 0</padding> -->
+			<lineSpacing>1</lineSpacing>
+			<opacity>0</opacity>
+			<storyboard ifSubset="animation:on">
+				<animation property="opacity" from="0" to="1" duration="1000" begin="11000" mode="easeout" />
+			</storyboard>
+			<storyboard ifSubset="animation:off">
+				<animation property="opacity" from="0" to="1" duration="0" begin="11000" mode="easeout" />
+			</storyboard>
+		</text>
+		<image name="system-background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<path>./assets/systems/background/${system.theme}.jpg</path>
+			<zIndex>1</zIndex>
+			<storyboard ifSubset="animation:on">
+				<animation property="scale" from="1.05" to="1.015" duration="500" mode="Bump" />
+				<animation property="opacity" from="1" to="0.5" duration="1000" begin="10000" mode="easeout" />
+			</storyboard>
+		</image>
+		<image name="logo">
+			<path>./assets/systems/logos/${system.theme}.webp</path>
+			<path>./assets/systems/logos/${system.theme}.png</path>
+			<path>./assets/systems/logos/${system.theme}.svg</path>
+			<!-- TODO do we need white logos here ??? -->
+		</image>
+		<carousel name="systemcarousel">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<type>horizontal</type>
+			<color>00000000</color>
+			<logoSize>0.7 0.6</logoSize>
+			<logoSize>1 1</logoSize>
+			<logoScale>1</logoScale>
+			<maxLogoCount>1</maxLogoCount>
+			<!-- <defaultTransition>fade & slide</defaultTransition> -->
+			<defaultTransition>instant</defaultTransition>
+			<zIndex>2</zIndex>
+			<itemTemplate>
+				<container>
+					<image name="system-logo">
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.8 0.3</maxSize>
+						<path>{system:logo}</path>
+						<reflexion>0.1 0</reflexion>
+						<storyboard event="activate" ifSubset="animation:on">
+							<animation property="offsetX" from="0" to="-0.005" duration="1000" mode="easeInOut" />
+
+							<animation begin="1000" repeat="4" property="offsetX" from="-0.005" to="0.005" duration="1000" mode="easeInOut" autoReverse="true" />
+
+							<animation begin="9000" property="offsetX" from="-0.005" to="0" duration="1000" mode="easeInOut" />
+
+							<animation property="offsetY" from="0" to="-0.3" duration="1000" mode="easeInOut" begin="10000" />
+						</storyboard>
+						<storyboard event="activate" ifSubset="animation:off">
+							<animation property="offsetY" from="0" to="-0.3" duration="0" mode="easeInOut" begin="10000" />
+						</storyboard>
+					</image>
+					<text name="system-name">
+						<text>{system:fullName}</text>
+						<fontPath>${fontBold}</fontPath>
+						<fontSize>0.06</fontSize>
+						<!-- 72 -->
+						<lineSpacing>0.75</lineSpacing>
+						<forceUppercase>true</forceUppercase>
+						<color>${color.foreground}</color>
+						<alignment>center</alignment>
+						<multiLine>true</multiLine>
+						<visible>!exists({system:logo})</visible>
+						<storyboard event="activate" ifSubset="animation:on">
+							<animation property="offsetX" from="0" to="-0.005" duration="1000" mode="easeInOut" />
+
+							<animation begin="1000" repeat="4" property="offsetX" from="-0.005" to="0.005" duration="1000" mode="easeInOut" autoReverse="true" />
+
+							<animation begin="9000" property="offsetX" from="-0.005" to="0" duration="1000" mode="easeInOut" />
+
+							<animation property="offsetY" from="0" to="-0.3" duration="1000" mode="easeInOut" begin="10000" />
+						</storyboard>
+						<storyboard event="activate" ifSubset="animation:off">
+							<animation property="offsetY" from="0" to="-0.3" duration="0" mode="easeInOut" begin="10000" />
+						</storyboard>
+					</text>
+				</container>
+			</itemTemplate>
+		</carousel>
+		<!-- Start: System Count -->
+		<text name="system-count,system-count-single,system-count-null" extra="true" ifSubset="system-count:on">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.8</pos>
+			<size>0 0.05</size>
+			<opacity>1</opacity>
+			<alignment>center</alignment>
+			<fontSize ifSubset="font-size:small">${fontSize16}</fontSize>
+			<fontSize ifSubset="font-size:default">${fontSize18}</fontSize>
+			<fontSize ifSubset="font-size:large">${fontSize20}</fontSize>
+			<fontPath>${fontBold}</fontPath>
+			<color>${color.foreground}</color>
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+		</text>
+		<text name="system-count" extra="true" ifSubset="system-count:on">
+			<text>{system:total} Games</text>
+			<visible>{system:total} &gt; 1 ? 1 : 0</visible>
+		</text>
+		<text name="system-count-single" extra="true" ifSubset="system-count:on">
+			<text>1 Game</text>
+			<visible>{system:total} == 1 ? 1 : 0</visible>
+		</text>
+		<text name="system-count-null" extra="true" ifSubset="system-count:on">
+			<text>0 Games</text>
+			<visible>{system:total} == 0 ? 1 : 0</visible>
+		</text>
+		<control name="system-count,system-count-single,system-count-null">
+			<storyboard ifSubset="animation:on">		
+				<animation property="opacity" from="0" to="1" duration="200" mode="easeIn" />
+				<animation property="opacity" to="0" begin="10000" duration="1000" mode="easeout" />
+				<animation property="offsetY" from="0" to="0.1" duration="1000" mode="easeinout" begin="10000"/>
+			</storyboard>
+			<storyboard ifSubset="animation:off">		
+				<animation property="opacity" to="0" begin="10000" duration="0" mode="easeout" />
+			</storyboard>
+		</control>
+		<!-- End: System Count -->
+	</view>
+</theme>

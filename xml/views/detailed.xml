@@ -1,0 +1,513 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="detailed">
+
+		<!-- BACKGROUND SCREENSHOT -->
+		<image name="background_screenshot" extra="true">
+			<minSize>1 1</minSize>
+			<path>{game:image}</path>
+			<storyboard event="activate" ifSubset="animation:on">
+				<animation property="opacity" from="0" to="1" duration="500" mode="easeout"/>
+			</storyboard>
+			<storyboard event="deactivate" ifSubset="animation:on">
+				<animation property="opacity" to="0" duration="500" mode="easeout"/>
+			</storyboard>
+			<color ifSubset="screenshotOpacity:25">ffffff40</color>
+			<color ifSubset="screenshotOpacity:30">ffffff4D</color>
+			<color ifSubset="screenshotOpacity:35">ffffff59</color>
+			<color ifSubset="screenshotOpacity:40">ffffff66</color>
+			<color ifSubset="screenshotOpacity:45">ffffff73</color>
+			<color ifSubset="screenshotOpacity:50">ffffff80</color>
+			<color ifSubset="screenshotOpacity:55">ffffff8C</color>
+			<color ifSubset="screenshotOpacity:60">ffffff99</color>
+			<color ifSubset="screenshotOpacity:65">ffffffA6</color>
+			<color ifSubset="screenshotOpacity:70">ffffffB2</color>
+			<color ifSubset="screenshotOpacity:75">ffffffBF</color>
+			<color ifSubset="screenshotOpacity:80">ffffffCC</color>
+			<color ifSubset="screenshotOpacity:85">ffffffD9</color>
+			<color ifSubset="screenshotOpacity:90">ffffffE6</color>
+			<color ifSubset="screenshotOpacity:95">ffffffF2</color>
+			<color ifSubset="screenshotOpacity:100">ffffffFF</color>
+			<color ifSubset="screenshotOpacity:0">ffffff00</color>
+			<color ifSubset="screenshotOpacity:5">ffffff0D</color>
+			<color ifSubset="screenshotOpacity:10">ffffff1A</color>
+			<color ifSubset="screenshotOpacity:15">ffffff26</color>
+			<color ifSubset="screenshotOpacity:20">ffffff33</color>
+			<zIndex>1</zIndex>
+		</image>
+		<!-- <image name="background_screenshot_animation" extra="true">
+			<minSize>1 1</minSize>
+			<path>{game:image}</path>
+			<opacity>0</opacity>
+			<storyboard repeat="forever" event="activate">
+				<animation property="opacity" from="0" to="1" duration="2000" begin="10000" mode="easeOut"/>
+				<animation property="opacity" from="1" to="0" duration="2000" begin="13000" mode="easeIn"/>
+			</storyboard>
+			<zIndex>100</zIndex>
+			<visible>empty({game:video})</visible>
+		</image> -->
+		<image name="default_background_no_screenshot" extra="true">
+			<minSize>1 1</minSize>
+			<path>./assets/images/default_game_background.webp</path>
+			<storyboard event="activate" ifSubset="animation:on">
+				<animation property="opacity" from="0" to="1" duration="500" mode="easeout"/>
+			</storyboard>
+			<storyboard event="deactivate" ifSubset="animation:on">
+				<animation property="opacity" to="0" duration="500" mode="easeout"/>
+			</storyboard>
+			<color>ffffff40</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+			<visible>empty({game:image})</visible>
+		</image>
+
+		<!-- VIDEO -->
+		<video name="video" extra="true" ifSubset="video:on">
+			<minSize>1 1</minSize>
+			<!-- fills screen but crops if not 4:3 -->
+			<!-- <maxSize>1 1</maxSize> -->
+			<!-- doesn't crop but letterbox -->
+			<delay ifSubset="videoDelay:0">0</delay>
+			<delay ifSubset="videoDelay:5">5</delay>
+			<delay ifSubset="videoDelay:10">10</delay>
+			<delay ifSubset="videoDelay:30">30</delay>
+			<path>{game:video}</path>
+			<color ifSubset="videoOpacity:60">999999FF</color>
+			<color ifSubset="videoOpacity:65">A6A6A6FF</color>
+			<color ifSubset="videoOpacity:70">B2B2B2FF</color>
+			<color ifSubset="videoOpacity:75">BFBFBFFF</color>
+			<color ifSubset="videoOpacity:80">CCCCCCFF</color>
+			<color ifSubset="videoOpacity:85">D9D9D9FF</color>
+			<color ifSubset="videoOpacity:90">E6E6E6FF</color>
+			<color ifSubset="videoOpacity:95">F2F2F2FF</color>
+			<color ifSubset="videoOpacity:100">FFFFFFFF</color>
+			<color ifSubset="videoOpacity:0">000000FF</color>
+			<color ifSubset="videoOpacity:5">0D0D0DFF</color>
+			<color ifSubset="videoOpacity:10">1A1A1AFF</color>
+			<color ifSubset="videoOpacity:15">262626FF</color>
+			<color ifSubset="videoOpacity:20">333333FF</color>
+			<color ifSubset="videoOpacity:25">404040FF</color>
+			<color ifSubset="videoOpacity:30">4D4D4DFF</color>
+			<color ifSubset="videoOpacity:35">595959FF</color>
+			<color ifSubset="videoOpacity:40">666666FF</color>
+			<color ifSubset="videoOpacity:45">737373FF</color>
+			<color ifSubset="videoOpacity:50">808080FF</color>
+			<color ifSubset="videoOpacity:55">8C8C8CFF</color>
+			<effect>none</effect>
+			<loops>0</loops>
+			<zIndex>2</zIndex>
+			<opacity>1</opacity>
+			<storyboard ifSubset="animation:on">
+				<animation property="opacity" from="0" to="1" duration="2000" mode="easein" />
+			</storyboard>
+		</video>
+
+		<!-- BOXART -->
+		<image name="boxart" extra="true">
+			<origin>0 0.5</origin>
+			<pos>0.01 0.31</pos> <!-- 320 410 -->
+			<maxSize>0.24 0.45</maxSize> <!-- 160 150 -->
+			<path>{game:thumbnail}</path>
+			<zIndex>4</zIndex>
+			<opacity>1</opacity>
+			<storyboard event="activate" ifSubset="animation:on">
+				<animation property="opacity" from="0" to="1" duration="500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate" ifSubset="animation:on">
+				<animation property="opacity" to="0" duration="500" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+
+		<!-- GAME LOGO -->
+		<image name="game_logo" extra="true">
+			<origin>1 0.5</origin>
+			<pos>0.99 0.13</pos>
+			<maxSize>0.24 0.24</maxSize>
+			<path >{game:marquee}</path>
+			<zIndex>3</zIndex>
+			<opacity>1</opacity>
+			<storyboard event="activate" ifSubset="animation:on">
+				<animation property="opacity" from="0" to="1" duration="500" mode="EaseOutQuint"/>				
+			</storyboard>
+			<storyboard event="deactivate" ifSubset="animation:on">
+				<animation property="opacity" to="0" duration="500" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+
+		<!-- SYSTEM LOGO -->
+		<image name="logo">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.1</pos>
+			<maxSize>0.35 0.125</maxSize>
+			<!-- default to black logos -->
+			<path>./assets/systems/logos/${system.theme}.webp</path>
+			<path>./assets/systems/logos/${system.theme}.png</path>
+			<path>./assets/systems/logos/${system.theme}.svg</path>
+			<!-- white logos for dark themes, if available -->
+			<path ifSubset="color:everforest|monokai_pro|catppuccin_mocha|dracula|nord|dark">./assets/systems/logos/${system.theme}-w.webp</path>
+			<path ifSubset="color:everforest|monokai_pro|catppuccin_mocha|dracula|nord|dark">./assets/systems/logos/${system.theme}-w.png</path>
+			<path ifSubset="color:everforest|monokai_pro|catppuccin_mocha|dracula|nord|dark">./assets/systems/logos/${system.theme}-w.svg</path>
+			<zIndex>4</zIndex>
+		</image>
+		<text name="logoText">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.1</pos>
+			<size>0.35 0.125</size>
+			<fontPath>${fontBold}</fontPath>
+			<fontSize>${fontSize27}</fontSize>
+			<lineSpacing>0.25</lineSpacing>
+			<forceUppercase>true</forceUppercase>
+			<alignment>center</alignment>
+			<color>${color.foreground}</color>
+			<zIndex>4</zIndex>
+		</text>
+
+		<!--
+		shared values for all labels and text
+		-->
+		<text name="
+			developer_label, developer_text,
+			publisher_label, publisher_text,
+			genre_label, genre_text,
+			release_date_label, release_date_text,
+			players_label, players_text,
+			lang_label, lang_text,
+			last_played_label, last_played_text,
+			play_time_label, play_time_text,
+			description_label, description_text
+		"
+		extra="true">
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>${gamelistMetadataFontSize}</fontSize>
+			<color>${color.foreground}</color>
+			<verticalAlignment>bottom</verticalAlignment>
+			<lineSpacing>1</lineSpacing>
+			<size>0.2 ${fontSize20}</size>
+			<x>0.01</x>
+			<alignment>left</alignment>
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+		</text>
+
+		<!-- overrides for *_text elements -->
+		<text name="
+			developer_text,
+			publisher_text,
+			genre_text,
+			release_date_text,
+			players_text,
+			lang_text,
+			last_played_text,
+			play_time_text,
+			description_text
+		">
+			<color>${color.comment}</color>
+			<verticalAlignment>top</verticalAlignment>
+		</text>
+
+		<!-- overrides for right side -->
+
+		<text name="
+			release_date_label, release_date_text,
+			players_label, players_text,
+			lang_label, lang_text,
+			last_played_label, last_played_text,
+			play_time_label, play_time_text,
+			description_label, description_text
+		">
+			<x>0.79</x>
+			<alignment>right</alignment>
+		</text>
+
+		<!-- shared scrolling fields (scroll) -->
+		<text name="
+			developer_text,
+			publisher_text,
+			genre_text,
+			description_text
+		">
+			<!-- <singleLineScroll>true</singleLineScroll> -->
+			<autoScroll>horizontal</autoScroll>
+			<autoScrollDelay>1000</autoScrollDelay>
+			<autoScrollSpeed>${scrollSpeed}</autoScrollSpeed>
+		</text>
+
+		<!--
+			LEFT SIDE
+		-->
+		<!-- DEVELOPER -->
+		<text name="developer_label">
+			<y>0.61</y>
+			<text>Developer</text>
+			<visible>!empty({game:developer})</visible>
+		</text>
+		<text name="developer_text">
+			<y>0.66</y><!-- 680 400 -->
+			<text>{game:developer}</text>
+			<visible>!empty({game:developer})</visible>
+		</text>
+		<!-- PUBLISHER -->
+		<text name="publisher_label">
+			<y>0.71</y>
+			<text>Publisher</text>
+			<visible>!empty({game:publisher})</visible>
+		</text>
+		<text name="publisher_text">
+			<y>0.76</y>
+			<text>{game:publisher}</text>
+			<visible>!empty({game:publisher})</visible>
+		</text>
+		<!-- GENRE -->
+		<text name="genre_label">
+			<y>0.81</y>	
+			<text>Genre</text>
+			<visible>!empty({game:genre})</visible>
+		</text>	
+		<text name="genre_text">
+			<y>0.86</y>
+			<text>{game:genre}</text>
+			<visible>!empty({game:genre})</visible>
+		</text>
+
+		<!--
+			RIGHT SIDE
+		-->
+		<!-- RELEASE DATE -->
+		<text name="release_date_label">
+			<y>0.26</y>
+			<text>Released</text>
+			<visible>!empty({game:releaseyear})</visible>
+		</text>
+		<text name="release_date_text">
+			<y>0.31</y>
+			<text>day({game:releasedate}) + "-" + month({game:releasedate}) + "-" + year({game:releasedate})</text>
+			<visible>!empty({game:releaseyear})</visible>
+		</text>
+		<!-- PLAYERS -->
+		<text name="players_label">
+			<y>0.36</y>
+			<text>Players</text>
+			<visible>!empty({game:players})</visible>
+		</text>
+		<text name="players_text">
+			<!-- <fontPath>${fontNerd}</fontPath> -->
+			<y>0.41</y>
+			<text>
+				{game:players} == "1" ? "" :
+				{game:players} == "1-2" || {game:players} == "2" ? " " :
+				{game:players} == "1-3" || {game:players} == "3" ? "" :
+				{game:players} == "1-4" || {game:players} == "4" ? " " :
+				{game:players} == "1-5" || {game:players} == "5" ? "  " :
+				{game:players} == "1-6" || {game:players} == "6" ? " " :
+				{game:players} == "1-7" || {game:players} == "7" ? "  " :
+				{game:players} == "1-8" || {game:players} == "8" ? "   " :
+				{game:players} == "1-9" || {game:players} == "9" ? "  " :
+				{game:players}
+			</text>
+			<visible>!empty({game:players})</visible>
+		</text>
+		<!-- LANGUAGE -->
+		<text name="lang_label">
+			<y>0.46</y>
+			<text>Language</text>
+			<visible>!empty({game:lang})</visible>
+		</text>
+		<text name="lang_text">
+			<y>0.51</y>
+			<text>{game:lang}</text>
+			<visible>contains(lower({game:lang}), ',')</visible>
+			<!-- show flag image if only 1 language -->
+		</text>
+		<!-- LAST PLAYED -->
+		<text name="last_played_label">
+			<y>0.56</y>
+			<text>Last Played</text>
+		</text>
+		<text name="last_played_text">
+			<y>0.61</y>
+			<text>{game:playcount} > 0 ? elapsed({game:lastplayed}) : "Never"</text>
+		</text>
+		<!-- PLAY TIME -->
+		<text name="play_time_label">
+			<y>0.66</y>
+			<text>Play Time</text>
+			<visible>!empty({game:gametime})</visible>
+		</text>
+		<text name="play_time_text">
+			<y>0.71</y>
+			<text>{game:gametime} > 0 ? expandseconds({game:gametime}) : "None"</text>
+			<visible>!empty({game:gametime})</visible>
+		</text>
+		<!-- DESCRIPTION -->
+		<text name="description_label">
+			<y>0.76</y>
+			<text>Description</text>
+			<visible>!empty({game:desc})</visible>
+		</text>
+		<text name="description_text">
+			<origin>1 0</origin>
+			<x>0.995</x>
+			<y>0.81</y>
+			<size>0.25 0.13541666666666666</size><!-- 160 20 -->
+			<text>{game:desc}</text>
+			<fontPath>${fontCondensed}</fontPath>
+			<autoScroll>vertical</autoScroll>
+			<visible>!empty({game:desc})</visible>
+		</text>
+		<!-- GAMELIST -->
+		<textlist name="gamelist">
+			<origin>0.5 0</origin>
+			<pos>0.5 0.18125</pos>
+			<size>0.48 0.75</size>
+			<alignment>center</alignment>
+			<!-- <horizontalMargin>0.0125</horizontalMargin> -->
+			<fontPath ifSubset="fontCondensed:on">${fontCondensed}</fontPath>
+			<fontPath ifSubset="fontCondensed:off">${fontRegular}</fontPath>
+			<primaryColor>${color.comment}</primaryColor>
+			<secondaryColor>${color.comment}</secondaryColor>
+			<selectorColor>${color.foreground}40</selectorColor>
+			<selectedColor>${color.foreground}</selectedColor>
+			<selectorImagePath>./assets/images/gameSelector.png</selectorImagePath>
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+			<fontSize ifSubset="font-size:small">${fontSize15}</fontSize>
+			<lines ifSubset="font-size:small">17</lines>
+			<fontSize ifSubset="font-size:default">${fontSize17}</fontSize>
+			<lines ifSubset="font-size:default">15</lines>
+			<fontSize ifSubset="font-size:large">${fontSize19}</fontSize>
+			<lines ifSubset="font-size:large">13</lines>
+			<forceUppercase ifSubset="uppercaseGames:on">true</forceUppercase>
+			<zIndex>3</zIndex>
+		</textlist>
+		<!-- RATING -->
+		<rating name="md_rating">
+			<origin>0 0.5</origin>
+			<pos>0.01 0.575</pos>
+			<size>0.2 0.0625</size>
+			<size verticalScreen="true">0.2 0.035</size>
+			<color>${color.yellow}</color>
+			<unfilledColor>00000000</unfilledColor>
+			<!-- <rotation>180</rotation> -->
+			<unfilledPath>:/star_filled.svg</unfilledPath>
+		</rating>
+		<!-- FLAGS ICON -->
+		<image name="region_flag" extra="true">
+			<path>${themePath}/assets/images/flags/{game:region}.png</path>
+			<pos>0.01 0.9</pos>
+			<maxSize>1 0.049875</maxSize>
+			<visible>!contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+		</image>
+		<image name="region_flag_world" extra="true">
+			<path>${themePath}/assets/images/flags/wr.png</path>
+			<pos>0.01 0.9</pos>
+			<size>0.075 0.049875</size>
+			<maxSize>1 0.049875</maxSize>
+			<visible>contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+		</image>
+		<image name="lang_flag" extra="true">
+			<path>${themePath}/assets/images/flags/{game:lang}.png</path>
+			<origin>1 0</origin>
+			<pos>0.99 0.52</pos>
+			<maxSize>1 0.029925</maxSize>
+			<visible>!contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			<!-- {game:region} != "us" &amp;&amp;  -->
+		</image>
+		<!-- force us flag if en_us otherwise we will se uk flag for us games as well, also check comment above -->
+		<!-- <image name="lang_flag_us_en" extra="true">
+			<path>${themePath}/assets/images/flags/us.png</path>
+			<origin>1 0</origin>
+			<pos>0.99 0.52</pos>
+			<maxSize>1 0.029925</maxSize>
+			<visible>{game:region} == "us" &amp;&amp; {game:lang} == "en"</visible>
+		</image> -->
+
+		<!-- 
+			GAME METADATA ICONS
+		-->
+		<stackpanel name="game_metadata_icons" extra="true">
+			<size>1 0.05</size>
+			<pos>0.01 0.01</pos>
+			<orientation>horizontal</orientation>
+			<separator>10</separator>                              
+			<image name="md_cheevos">
+				<path>./resources/fontoverrides/F091.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:cheevos}</visible>
+			</image>
+			<image name="md_notcheevos">
+				<path>./resources/fontoverrides/F091.png</path>
+				<maxSize>1 1</maxSize>
+				<color>333333</color>
+				<visible>!{game:cheevos}</visible>
+			</image>
+			<image name="md_savestate">
+				<path>./resources/fontoverrides/F0C7.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:hasSaveState}</visible>
+			</image>
+			<image name="md_nosavestate">
+				<path>./resources/fontoverrides/F0C7.png</path>
+				<maxSize>1 1</maxSize>
+				<color>333333</color>
+				<visible>!{game:hasSaveState}</visible>
+			</image>
+			
+			<image name="md_manual">
+				<path>./resources/fontoverrides/F02D.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:hasManual}</visible>
+			</image>
+			<image name="md_map">
+				<path>./resources/fontoverrides/F0AC.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>exists({game:map})</visible>
+			</image>
+			<image name="md_kidgame">
+				<path>./resources/fontoverrides/kidGame.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:kidGame}</visible>
+			</image>
+			<image name="md_gungame">
+				<path>./resources/fontoverrides/F05B.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:gunGame}</visible>
+			</image>
+			<image name="md_wheelgame">
+				<path>./resources/fontoverrides/F1B9.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:wheelGame}</visible>
+			</image>
+			<image name="md_trackballgame">
+				<path>./resources/fontoverrides/F111.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:trackballGame}</visible>
+			</image>
+			<image name="md_spinnergame">
+				<path>./resources/fontoverrides/F10C.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:spinnerGame}</visible>
+			</image>
+			<image name="keyboardMapping">
+				<!-- md_ ??? -->
+				<path>./resources/fontoverrides/keyboardMapping.png</path>
+				<maxSize>1 1</maxSize>
+				<visible>{game:hasKeyboardMapping}</visible>
+			</image>
+
+		</stackpanel>
+
+		<!-- hide built-in stuff -->
+		<text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description,md_name,md_lbl_gametime,md_gametime">
+			<visible>false</visible>
+		</text>
+		<datetime name="md_releasedate,md_lastplayed">
+			<visible>false</visible>
+		</datetime>
+		<image name="md_image,md_marquee">
+			<visible>false</visible>
+		</image>
+		<video name="md_video">
+			<visible>false</visible>
+		</video>
+	</view>
+</theme>

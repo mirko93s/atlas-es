@@ -1,0 +1,22 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables>
+
+      <color.background>272E33</color.background>
+      <color.foreground>D3C6AA</color.foreground>
+      <color.comment>859289</color.comment>
+
+      <color.red>E67E80</color.red>
+      <color.yellow>DBBC7F</color.yellow>
+      
+      <!-- unused -->
+      <color.blue>7FBBB3</color.blue>
+      <color.green>A7C080</color.green>
+      <color.orange>E69875</color.orange>
+      <color.purple>D699B6</color.purple>
+
+      <menuFooterColor>4A4A4A</menuFooterColor>
+      <!-- where tf is this used??? -->
+
+   </variables>
+</theme>

@@ -1,0 +1,30 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="menu,system,detailed">
+		<helpsystem name="help"
+			glowColor="000000"
+			glowSize="1"
+			iconUpDown="./assets/icons/help/${helpIconFolder}/updown.png"
+			iconLeftRight="./assets/icons/help/${helpIconFolder}/leftright.png"
+			iconUpDownLeftRight="./assets/icons/help/${helpIconFolder}/all.png"
+			iconA="./assets/icons/help/${helpIconFolder}/a.png"
+			iconB="./assets/icons/help/${helpIconFolder}/b.png"
+			iconX="./assets/icons/help/${helpIconFolder}/x.png"
+			iconY="./assets/icons/help/${helpIconFolder}/y.png"
+			iconL="./assets/icons/help/${helpIconFolder}/l.png"
+			iconR="./assets/icons/help/${helpIconFolder}/r.png"
+			iconStart="./assets/icons/help/${helpIconFolder}/start.png"
+			iconSelect="./assets/icons/help/${helpIconFolder}/select.png"
+
+		>
+			<pos>0.01 0.9629166666666667</pos>
+			<fontPath>${fontCondensed}</fontPath>
+			<textColor>${color.foreground}</textColor>
+			<iconColor>ffffff</iconColor>
+			<color>${color.foreground}</color>
+			<fontSize ifSubset="font-size:small">${fontSize11}</fontSize>
+			<fontSize ifSubset="font-size:default">${fontSize12}</fontSize>
+			<fontSize ifSubset="font-size:large">${fontSize13}</fontSize>
+		</helpsystem>
+	</view>
+</theme>

@@ -1,0 +1,22 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables>
+
+      <color.background>BLACK</color.background>
+      <color.foreground>WHITE</color.foreground>
+      <color.comment>GRAY</color.comment>
+
+      <color.red>RED</color.red>
+      <color.yellow>YELLOW</color.yellow>
+
+      <!-- unused -->
+      <color.blue>BLUE</color.blue>
+      <color.green>GREEN</color.green>
+      <color.orange>ORANGE</color.orange>
+      <color.purple>PURPLE</color.purple>
+
+      <menuFooterColor>4A4A4A</menuFooterColor>
+      <!-- TODO where tf is this used? -->
+
+   </variables>
+</theme>

@@ -1,0 +1,9 @@
+<theme>
+	<variables>
+		<systemName>Visual Pinball</systemName>
+		<systemManufacturer>Visual Pinball</systemManufacturer>
+		<systemReleaseYear>2000</systemReleaseYear>
+		<systemReleaseDate>2000-12-19</systemReleaseDate>
+		<systemDescription>Visual Pinball is a freeware and source available video game engine for pinball tables and similar games such as pachinko machines. It includes a table editor as well as the simulator itself, and runs on Microsoft Windows. It can be used with Visual PinMAME, an emulator for ROM images from real pinball machines.</systemDescription>
+	</variables>
+</theme>

@@ -1,0 +1,67 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="menu">
+		<menuIcons name="menuicons">
+			<iconSystem>./assets/icons/menu/settings.png</iconSystem>
+			<iconUpdates>./assets/icons/menu/download.png</iconUpdates>
+			<iconGames>./assets/icons/menu/options.png</iconGames>
+			<iconControllers>./assets/icons/menu/bluetooth.png</iconControllers>
+			<iconUI>./assets/icons/menu/ui.png</iconUI>
+			<iconSound>./assets/icons/menu/sound.png</iconSound>
+			<iconNetwork>./assets/icons/menu/wifi.png</iconNetwork>
+			<iconScraper>./assets/icons/menu/scraper.png</iconScraper>
+			<iconAdvanced>./assets/icons/menu/collection.png</iconAdvanced>
+			<iconRetroachievements>./assets/icons/menu/trophy.png</iconRetroachievements>
+			<iconPlanemode>./assets/icons/menu/planemode.png</iconPlanemode>
+			<iconQuit>./assets/icons/menu/quit.png</iconQuit>
+			<iconRestart>./assets/icons/menu/restart.png</iconRestart>
+			<iconShutdown>./assets/icons/menu/shutdown.png</iconShutdown>
+			<iconFastShutdown>./assets/icons/menu/fastshutdown.png</iconFastShutdown>
+			<iconManual>./assets/icons/menu/manual.png</iconManual>
+			<!-- <iconKodi>./assets/icons/menu/Kodi.png</iconKodi> -->
+			<!-- <iconEmuelec>./assets/icons/menu/Emuelec.png</iconEmuelec> -->
+		</menuIcons>
+		<menuText name="menutitle">
+			<fontPath>${fontBold}</fontPath>
+			<fontSize ifSubset="font-size:small">${fontSize19}</fontSize>
+			<fontSize ifSubset="font-size:default">${fontSize21}</fontSize>
+			<fontSize ifSubset="font-size:large">${fontSize23}</fontSize>
+			<color>${color.foreground}</color>
+		</menuText>
+		<menuText name="menufooter">
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize ifSubset="font-size:small">${fontSize9}</fontSize>
+			<fontSize ifSubset="font-size:default">${fontSize11}</fontSize>
+			<fontSize ifSubset="font-size:large">${fontSize13}</fontSize>
+			<color>${menuFooterColor}</color>
+		</menuText>
+		<menuText name="menutext">
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize ifSubset="font-size:small">${fontSize15}</fontSize>
+			<fontSize ifSubset="font-size:default">${fontSize17}</fontSize>
+			<fontSize ifSubset="font-size:large">${fontSize19}</fontSize>
+			<color>${color.foreground}</color>
+			<separatorColor>00000000</separatorColor> <!-- transparent -->
+			<selectedColor>${color.background}</selectedColor>
+			<selectorColor>${color.foreground}</selectorColor>
+		</menuText>
+		<menuTextSmall name="menutextsmall">
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize ifSubset="font-size:small">${fontSize11}</fontSize>
+			<fontSize ifSubset="font-size:default">${fontSize13}</fontSize>
+			<fontSize ifSubset="font-size:large">${fontSize15}</fontSize>
+			<color>${color.foreground}80</color>
+			<color>${color.comment}</color>
+			<!-- TODO test color.comment here -->
+		</menuTextSmall>
+		<menuTextEdit name="menutextedit">
+			<inactive>./assets/images/menu-textinput.png</inactive>
+			<active>./assets/images/menu-textinput-active.png</active>
+		</menuTextEdit>
+		<menuBackground name="menubg">
+			<color>${color.background}</color>
+			<cornerSize>20 20</cornerSize>
+		</menuBackground>
+	</view>
+</theme>

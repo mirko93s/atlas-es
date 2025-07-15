@@ -1,0 +1,9 @@
+<theme>
+	<variables>
+		<systemName>ChaiLove Framework</systemName>
+		<systemManufacturer>ChaiLove Team</systemManufacturer>
+		<systemReleaseYear>2017</systemReleaseYear>
+		<systemReleaseDate>2017-11-30</systemReleaseDate>
+		<systemDescription>ChaiLove is an awesome framework you can use to make 2D games in ChaiScript. It's free, open-source, and works on Windows, Mac OS X, Linux, Android, and ARM through libretro/RetroArch.</systemDescription>
+	</variables>
+</theme>

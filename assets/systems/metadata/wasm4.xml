@@ -1,0 +1,9 @@
+<theme>
+	<variables>
+		<systemName>WASM-4</systemName>
+		<systemManufacturer>Bruno Garcia</systemManufacturer>
+		<systemReleaseYear>2022</systemReleaseYear>
+		<systemReleaseDate>2022-06-21</systemReleaseDate>
+		<systemDescription>WASM-4 is a low-level fantasy game console for building small games with WebAssembly. Game cartridges (ROMs) are small, self-contained .wasm files that can be built with any programming language that compiles to WebAssembly.</systemDescription>
+	</variables>
+</theme>

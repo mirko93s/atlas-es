@@ -1,0 +1,58 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<variables>
+		<spacerImage>./assets/images/space.png</spacerImage>
+		<helpIconFolder ifSubset="helpIcons:amazonluna">amazonluna</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:googlestadia">googlestadia</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:ps3">ps3</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:ps4">ps4</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:ps5">ps5</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:psvita">psvita</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:steam">steam</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:steamdeck">steamdeck</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:switch">switch</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:wiiu">wiiu</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:xbox360">xbox360</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:keyboard">keyboard</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:xboxone">xboxone</helpIconFolder>
+		<helpIconFolder ifSubset="helpIcons:xboxseriesx">xboxseriesx</helpIconFolder>
+
+		<include name="amazonluna" displayName="Amazon Luna" />
+		<include name="googlestadia" displayName="Google Stadia" />
+		<include name="ps3" displayName="PlayStation 3" />
+		<include name="ps4" displayName="Playstation 4" />
+		<include name="psvita" displayName="Playstation Vita" />
+		<include name="steam" displayName="Steam" />
+		<include name="wiiu" displayName="Nintendo Wii U" />
+		<include name="xbox360" displayName="Xbox 360" />
+		<include name="xboxone" displayName="Xbox One" />
+
+		<scrollSpeed ifSubset="scrollSpeed:fastest">20</scrollSpeed>
+		<scrollSpeed ifSubset="scrollSpeed:faster">30</scrollSpeed>
+		<scrollSpeed ifSubset="scrollSpeed:fast">40</scrollSpeed>
+		<scrollSpeed ifSubset="scrollSpeed:default">50</scrollSpeed>
+		<scrollSpeed ifSubset="scrollSpeed:slow">60</scrollSpeed>
+		<scrollSpeed ifSubset="scrollSpeed:slower">70</scrollSpeed>
+		<scrollSpeed ifSubset="scrollSpeed:slowest">80</scrollSpeed>
+
+		<!-- Fonts -->	
+		<fontRegular ifSubset="font:tektur">./assets/fonts/tektur/regular.ttf</fontRegular>
+		<fontBold ifSubset="font:tektur">./assets/fonts/tektur/bold.ttf</fontBold>
+		<fontCondensed ifSubset="font:tektur">./assets/fonts/tektur/condensed.ttf</fontCondensed>
+
+		<fontRegular ifSubset="font:saira">./assets/fonts/saira/regular.ttf</fontRegular>
+		<fontBold ifSubset="font:saira">./assets/fonts/saira/bold.ttf</fontBold>
+		<fontCondensed ifSubset="font:saira">./assets/fonts/saira/condensed.ttf</fontCondensed>
+
+		<fontRegular ifSubset="font:ubuntu">./assets/fonts/ubuntu/regular.ttf</fontRegular>
+		<fontBold ifSubset="font:ubuntu">./assets/fonts/ubuntu/bold.ttf</fontBold>
+		<fontCondensed ifSubset="font:ubuntu">./assets/fonts/ubuntu/condensed.ttf</fontCondensed>
+		
+		<!-- metadata font size -->
+		<gamelistMetadataFontSize ifSubset="font-size:large">0.03125</gamelistMetadataFontSize> <!-- 15 -->
+		<gamelistMetadataFontSize ifSubset="font-size:small">0.022916666666666665</gamelistMetadataFontSize> <!-- 11 -->
+		<gamelistMetadataFontSize ifSubset="font-size:default">0.0270833333333333</gamelistMetadataFontSize> <!-- 13 -->
+	</variables>
+	
+</theme>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:    atlas
+designed by:   mirko93s
+license:       CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+-->
+<theme defaultView="detailed" defaultTransition="slide">
+	<formatVersion>7</formatVersion>
+
+	<!-- KEEP THESE AT THE TOP -->
+	<include>./xml/fontSize.xml</include>
+	<include>./xml/options.xml</include>
+	<include>./xml/variables.xml</include>
+	<!-- System Metadata -->
+	<include>./assets/systems/metadata/_default.xml</include>
+	<include>./assets/systems/metadata/${system.theme}.xml</include>
+	<!-- Views -->
+	<include>./xml/views/screen.xml</include>
+	<include>./xml/views/system.xml</include>
+	<include>./xml/views/detailed.xml</include>
+	<include>./xml/views/menu.xml</include>
+	<!-- Other -->
+	<include>./xml/helpSystem.xml</include>
+
+</theme>

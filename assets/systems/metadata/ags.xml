@@ -1,0 +1,9 @@
+<theme>
+	<variables>
+		<systemName>Adventure Game Studio</systemName>
+		<systemManufacturer>Chris Jones</systemManufacturer>
+		<systemReleaseYear>1997</systemReleaseYear>
+		<systemReleaseDate>1997</systemReleaseDate>
+		<systemDescription>Adventure Game Studio (AGS) is an open source development tool primarily used to create graphic adventure games. It is aimed at intermediate-level game designers, and combines an integrated development environment (IDE) with a scripting language based on the C programming language to process game logic.</systemDescription>
+	</variables>
+</theme>

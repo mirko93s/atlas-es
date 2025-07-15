@@ -1,0 +1,9 @@
+<theme>
+	<variables>
+		<systemName>Sega Model 1</systemName>
+		<systemManufacturer>Sega</systemManufacturer>
+		<systemReleaseYear>1992</systemReleaseYear>
+		<systemReleaseDate>1992-01-01</systemReleaseDate>
+		<systemDescription>The Sega Model 1 is an arcade system board that was released by Sega in 1992 and is the successor to the Sega System 32 (released in 1990). While earlier Sega hardware was capable of handling 3D polygons (such as the Mega Drive, released in 1988), the Model 1 was Sega's first hardware specifically designed for 3D polygon graphics.</systemDescription>
+	</variables>
+</theme>
