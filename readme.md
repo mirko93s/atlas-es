@@ -27,6 +27,22 @@ Originally built for Knulli on a RG40XX H, Atlas is lightweight and fully compat
 3. In EmulationStation, go to UI Settings → Theme Set and select **Atlas**.  
 4. Restart EmulationStation if needed.
 
+## Scraper Settings
+
+To ensure correct layout and visuals, the following scraper settings are recommended:
+|||
+|-|-|
+|**Image Source**| Screenshot|
+|**Box Source**| 3D Box|
+|**Logo Source**| Wheel|
+|**Overwrite Media**| Enabled|
+|**Video**| Enabled (*optional*)|
+
+Map, Manual and PadToKey will display an icon in the top left if available.
+
+Other configurations may still work, but this setup is ideal for best results with the theme.
+
+
 ## Credits
 
 - System backgrounds and logos from the [CKAU Theme](https://github.com/CkauNui/ckau-book) and its [addons](https://github.com/CkauNui/ckau-book-addons-Consoles) by [CkauNui](https://github.com/CkauNui)  
