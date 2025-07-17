@@ -152,10 +152,10 @@
 		<text name="logoText">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.1</pos>
-			<size>0.35 0.125</size>
-			<fontPath>${fontBold}</fontPath>
+			<size>0.48 0</size>
+			<fontPath>${fontCondensed}</fontPath>
 			<fontSize>${fontSize27}</fontSize>
-			<lineSpacing>0.25</lineSpacing>
+			<lineSpacing>0.75</lineSpacing>
 			<forceUppercase>true</forceUppercase>
 			<alignment>center</alignment>
 			<color>${color.foreground}</color>
