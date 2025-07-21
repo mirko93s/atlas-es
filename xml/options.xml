@@ -3,7 +3,7 @@
 
 	<!-- Version -->
 	<subset name="version" displayName="Atlas by mirko93s">
-		<include name="version" displayName="v 1.0.1" />
+		<include name="version" displayName="v 1.0.2" />
 	</subset>
 
 	<!-- color palette -->

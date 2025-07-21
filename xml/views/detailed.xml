@@ -383,32 +383,37 @@
 		<rating name="md_rating">
 			<origin>0 0.5</origin>
 			<pos>0.01 0.575</pos>
-			<size>0.2 0.0625</size>
-			<size verticalScreen="true">0.2 0.035</size>
+			<size>0 ${fontSize30}</size> <!-- 4:3 and any other wider ratio -->
+			<size if="${screen.ratio} == '5/4'">0 ${fontSize28}</size>
+			<size if="${screen.ratio} == '6/5'">0 ${fontSize26}</size>
+			<size if="${screen.ratio} == '8/7'">0 ${fontSize24}</size>
+			<size if="${screen.ratio} == '16/15'">0 ${fontSize22}</size>
+			<size if="${screen.ratio} == '1/1'">0 ${fontSize20}</size>
+			<size verticalScreen="true">0 ${fontSize17}</size> <!-- 3:4, 7:9 -->
+			<size if="${screen.ratio} == '9/16'">0 ${fontSize12}</size>
 			<color>${color.yellow}</color>
 			<unfilledColor>00000000</unfilledColor>
-			<!-- <rotation>180</rotation> -->
 			<unfilledPath>:/star_filled.svg</unfilledPath>
 		</rating>
 		<!-- FLAGS ICON -->
 		<image name="region_flag" extra="true">
 			<path>${themePath}/assets/images/flags/{game:region}.png</path>
 			<pos>0.01 0.9</pos>
-			<maxSize>1 0.049875</maxSize>
+			<maxSize>0.2 0.049875</maxSize>
 			<visible>!contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
 		</image>
 		<image name="region_flag_world" extra="true">
 			<path>${themePath}/assets/images/flags/wr.png</path>
 			<pos>0.01 0.9</pos>
 			<size>0.075 0.049875</size>
-			<maxSize>1 0.049875</maxSize>
+			<maxSize>0.2 0.049875</maxSize>
 			<visible>contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
 		</image>
 		<image name="lang_flag" extra="true">
 			<path>${themePath}/assets/images/flags/{game:lang}.png</path>
 			<origin>1 0</origin>
 			<pos>0.99 0.52</pos>
-			<maxSize>1 0.029925</maxSize>
+			<maxSize>0.2 0.029925</maxSize>
 			<visible>!contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
 			<!-- {game:region} != "us" &amp;&amp;  -->
 		</image>
