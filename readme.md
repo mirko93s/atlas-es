@@ -22,10 +22,22 @@ Originally built for Knulli on a RG40XX H, Atlas is lightweight and fully compat
 
 ## Installation
 
-1. Download or clone this repository.  
-2. Copy the `atlas` folder into your EmulationStation themes directory.  
-3. In EmulationStation, go to UI Settings → Theme Set and select **Atlas**.  
-4. Restart EmulationStation if needed.
+### 🔹 Batocera (Built-in Theme Downloader)
+
+Atlas is available directly through Batocera's built-in theme downloader:
+
+1. Go to `MAIN MENU → UPDATES & DOWNLOADS → THEMES`
+2. Select **Atlas-es** from the list
+3. Press A to download and install
+4. In EmulationStation, go to `UI Settings → Theme Set` and select **Atlas-es**  
+
+### 🔹 Manual Installation (Other systems or forks)
+
+1. Download or clone this repository  
+2. Copy the `atlas-es` folder into your EmulationStation themes directory  
+3. In EmulationStation, go to `UI Settings → Theme Set` and select **Atlas-es**  
+4. Restart EmulationStation if needed
+
 
 ## Scraper Settings
 
