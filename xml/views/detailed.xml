@@ -67,7 +67,7 @@
 			<!-- fills screen but crops if not 4:3 -->
 			<!-- <maxSize>1 1</maxSize> -->
 			<!-- doesn't crop but letterbox -->
-			<delay ifSubset="videoDelay:0">0</delay>
+			<delay ifSubset="videoDelay:0">0.01</delay>
 			<delay ifSubset="videoDelay:5">5</delay>
 			<delay ifSubset="videoDelay:10">10</delay>
 			<delay ifSubset="videoDelay:30">30</delay>
