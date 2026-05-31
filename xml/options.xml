@@ -3,7 +3,7 @@
 
 	<!-- Version -->
 	<subset name="version" displayName="Atlas by mirko93s">
-		<include name="version" displayName="v 1.0.4" />
+		<include name="version" displayName="v 1.0.5" />
 	</subset>
 
 	<!-- color palette -->
@@ -17,6 +17,8 @@
 		<include name="monokai_pro_light" displayName="Monokai Pro Light">./colors/monokai_pro_light.xml</include>
 		<include name="catppuccin_mocha" displayName="Catppuccin Mocha">./colors/catppuccin_mocha.xml</include>
 		<include name="catppuccin_latte" displayName="Catppuccin Latte">./colors/catppuccin_latte.xml</include>
+		<include name="tokyo_night" displayName="Tokyo Night">./colors/tokyo_night.xml</include>
+		<include name="tokyo_day" displayName="Tokyo Day">./colors/tokyo_day.xml</include>
 	</subset>
 
 	<!-- animation -->
